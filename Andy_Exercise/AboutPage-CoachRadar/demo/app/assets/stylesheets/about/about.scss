@@ -1,0 +1,296 @@
+// Place all the styles related to the About controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$light-gray: #e4e4e4;
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto" , roboto, Sans-serif;
+}
+
+.navbar{
+  background-color: #0F7675;
+}
+
+.navbar-brand{
+  color: #FFF;
+  font-weight: 600;
+}
+
+.navbar-brand:hover{
+  color: darken(#FFF,10%);
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler:focus{
+  outline: none;
+  opacity: 0.5;
+}
+
+
+.nav-link a{
+  margin: 0;
+}
+
+div.jumbotron.jumbotron-fluid{
+  background-color: #0F7675;
+  color: #FFF;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+p.lead{
+  font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+}
+
+.icon-and-text{
+  margin-top: 50px;
+}
+
+i.fa-5x{
+  color: #0F7675;
+}
+
+h5.benefit{
+  margin-top: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+div.with-border{
+  position: relative;
+}
+
+div.with-border::after{
+  position: absolute;
+  content: "";
+  top: 15%;
+  height: 50%;
+  left: 100%;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+          border-radius: 2px;
+  border: 1.5px solid $light-gray;
+}
+
+div.with-border1{
+  position: relative;
+}
+
+div.with-border1::after{
+  position: absolute;
+  content: "";
+  top: 15%;
+  height: 50%;
+  left: 100%;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+          border-radius: 2px;
+  border: 1.5px solid $light-gray;
+}
+
+hr{
+  color: $light-gray;
+  width: 100%;
+}
+
+h3.text-center{
+  margin: 50px auto 50px auto;
+}
+
+.align-self-center{
+  color:  #0F7675;
+  padding-right: 30px;
+}
+
+.mt-4{
+  color:  #0F7675;
+  padding-right: 30px;
+}
+
+.slogan div.row{
+  margin: 60px auto 30px auto;
+}
+
+
+img.align-self-start.mr-3{
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px -6px $light-gray;
+     -moz-box-shadow: 10px 10px 10px -6px $light-gray;
+          box-shadow: 10px 10px 10px -6px $light-gray;
+}
+
+.carousel-inner {
+   margin-bottom:100px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: $light-gray;
+}
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #0F7675;
+}
+
+.what-parents-say{
+  padding-top: 50px;
+  text-align: center;
+  color: #0F7675;
+  padding-bottom: 50px;
+}
+
+.slider{
+  background-color: #F9F9F9;
+}
+
+.box-media{
+  background-color: #FFF;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 10px -6px $light-gray;
+     -moz-box-shadow: 10px 10px 10px -6px $light-gray;
+          box-shadow: 10px 10px 10px -6px $light-gray;
+}
+
+#carouselParent{
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.footer{
+  padding-top: 70px;
+  background-color: #F9F9F9;
+}
+.card{
+  border:0;
+  background-color: #F9F9F9;
+}
+
+.card-title{
+  color: #0F7675;
+  font-weight: 600;
+}
+
+.card-link-custom{
+  color: #0F7675;
+  font-weight: 600;
+}
+
+.card-link-custom:hover{
+  color: darken(#0F7675,10%);
+  font-weight: 600;
+}
+
+.card-custom{
+  margin: 0;
+  /*padding-left: 100px;*/
+}
+
+h5.card-title{
+  margin-bottom: 0;
+}
+
+.card-title-custom{
+  color: #0F7675;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.end-foot{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e4e4e4;
+}
+
+.link-end-foot{
+  color: black;
+}
+
+.link-end-foot:hover{
+  color: gray;
+  text-decoration: none;
+}
+
+.icon-fb{
+  width: 30px;
+  height: 30px;
+}
+
+.icon-ins{
+  width: 40px;
+  height: 40px;
+}
+
+.icon-twit{
+  width: 40px;
+  height: 40px;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media(min-width: 768px){
+  .end-foot{
+    text-align: left;
+  }
+}
+@media(min-width: 992px){
+  .end-foot{
+    text-align: left;
+  }
+}
+
+@media(min-width: 1200px){
+  .icon-left{
+    text-align: right;
+  }
+}
+
+@media(max-width: 767px){
+  div.with-border1::after{
+    border: 0;
+  }
+
+}
+
+@media(max-width: 991px){
+  section.slogan h3.text-center{
+      margin-bottom: 0;
+  }
+
+  section.slogan .row{
+    margin: 0;
+  }
+
+  section.slogan{
+    padding-bottom: 50px;
+  }
+
+  section.slogan div.media{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

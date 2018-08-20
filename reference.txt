@@ -1,0 +1,29 @@
+tạo quan hệ giữa 2 trường Product và Category
+
+b1:tạo file migrate
+
+ rails g migration add_reference_Category_to_Product
+
+trong file tạo ra dùng lệnh:
+
+add_reference :Products, :Category, :category_id 
+
+xong chạy:  rails db:migrate
+
+b2: cấu hình trong model của product và category (có 2 cách cấu hình trong category)
+
+trong model của product  ta khai báo : 	belongs_to :category
+
+trong model của category (cách 1):
+
+has_many :products , dependent: :destroy (products khai báo đúng tên của model Products , Rails tự hiểu là kết nối thông qua category_id. để lấy danh sách
+
+products có cùng category ta chỉ cần Category.products)
+
+(cách 2):
+
+has_many :'tên bất kì' , dependent: :destroy , foreign_key: "category_id" , class_name: "products" (khi sử dụng tên bất kì cho column liên kêt , ta cần khai báo
+
+liên kết thông qua foreign_key: , và kết nối đến model nào class_name: ,để lấy danh sách products có cùng category ta chỉ cần Category."tên bất kì" )
+
+
